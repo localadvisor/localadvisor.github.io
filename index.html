@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Google Profile Services</title>
+  <meta name="description" content="Optimización profesional de Google Business Profile para negocios locales. Visibilidad, confianza y crecimiento." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111b2e;
+      --text:#eaf0ff;
+      --muted:#9fb0d0;
+      --accent:#4f8cff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text)
+    }
+    a{text-decoration:none;color:inherit}
+    header{padding:60px 20px;border-bottom:1px solid #1f2a44}
+    .wrap{max-width:1100px;margin:0 auto}
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:32px;
+      align-items:center
+    }
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+    }
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 12px
+    }
+    p.lead{
+      font-size:18px;
+      color:var(--muted);
+      max-width:540px
+    }
+    .cta{
+      margin-top:20px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap
+    }
+    .btn{
+      padding:14px 20px;
+      border-radius:14px;
+      background:var(--accent);
+      color:#06122a;
+      font-weight:700
+    }
+    .btn.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid #2a3a66
+    }
+    section{padding:60px 20px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px
+    }
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid #1f2a44;
+      border-radius:16px;
+      padding:20px
+    }
+    .card h3{margin-top:0}
+    footer{
+      padding:30px 20px;
+      border-top:1px solid #1f2a44;
+      color:var(--muted)
+    }
+    .small{
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.4
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div>
+
+      <!-- LOGO (archivo: logo.png en la misma carpeta) -->
+      <img src="logo.png"
+           alt="Local Google Profile Services"
+           style="width:150px;margin-bottom:22px;">
+
+      <h1>Local Google Profile Services</h1>
+
+      <p class="lead">
+        Optimización profesional de <b>Google Business Profile</b> para negocios locales.
+        Mejoramos visibilidad en Google Maps, credibilidad y confianza del cliente.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#contacto">Solicitar auditoría</a>
+        <a class="btn secondary" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Qué hacemos</h3>
+      <p>
+        Auditamos, optimizamos y damos soporte a perfiles de Google para que tu negocio
+        se vea más profesional, aparezca mejor posicionado y convierta más clientes.
+      </p>
+      <p class="small">
+        Servicio independiente de consultoría.
+      </p>
+    </div>
+  </div>
+</header>
+
+<section id="servicios">
+  <div class="wrap">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Auditoría del perfil</h3>
+        <p>
+          Revisión completa con hallazgos claros y lista de mejoras para ranking,
+          confianza y conversiones.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Optimización completa</h3>
+        <p>
+          Información, categorías, descripción, atributos, fotos, productos/servicios
+          y estructura SEO del perfil.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Reputación y reseñas</h3>
+        <p>
+          Estrategia para solicitar reseñas reales, respuestas profesionales y mejora
+          de percepción del negocio.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo trabajamos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1) Diagnóstico</h3>
+        <p>Analizamos tu perfil y tu competencia local para detectar oportunidades rápidas.</p>
+      </div>
+      <div class="card">
+        <h3>2) Ejecución</h3>
+        <p>Aplicamos cambios con criterios de calidad y consistencia para evitar errores comunes.</p>
+      </div>
+      <div class="card">
+        <h3>3) Soporte</h3>
+        <p>Mantenemos el perfil activo con reseñas, publicaciones y ajustes según resultados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <div class="card">
+      <p><b>Email:</b> <a href="mailto:angel.localadvisor@gmail.com">angel.localadvisor@gmail.com</a></p>
+      <p><b>WhatsApp:</b> <a href="https://wa.me/18324960240" target="_blank">+1 832 496 0240</a></p>
+      <p><b>Ubicación:</b> Houston, TX</p>
+      <p class="small">
+        Atención directa por WhatsApp. Respuesta rápida para auditorías y optimización.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Local Google Profile Services. Servicio independiente.</p>
+  </div>
+</footer>
+
+</body>
+</html>
