@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Google Profile Services</title>
+
+  <!-- Meta description bilingüe (se actualiza con JS) -->
+  <meta name="description"
+        id="metaDesc"
+        data-es="Optimización profesional de Google Business Profile para negocios locales. Visibilidad, confianza y crecimiento."
+        data-en="Professional Google Business Profile optimization for local businesses. Visibility, trust, and growth."
+        content="Optimización profesional de Google Business Profile para negocios locales. Visibilidad, confianza y crecimiento." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111b2e;
+      --text:#eaf0ff;
+      --muted:#9fb0d0;
+      --accent:#4f8cff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text)
+    }
+    a{text-decoration:none;color:inherit}
+    header{padding:60px 20px;border-bottom:1px solid #1f2a44}
+    .wrap{max-width:1100px;margin:0 auto}
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:32px;
+      align-items:center
+    }
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+    }
+    h1{
+      font-size:clamp(34px,5vw,54px);
+      margin:0 0 12px
+    }
+    p.lead{
+      font-size:18px;
+      color:var(--muted);
+      max-width:540px
+    }
+    .cta{
+      margin-top:20px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap
+    }
+    .btn{
+      padding:14px 20px;
+      border-radius:14px;
+      background:var(--accent);
+      color:#06122a;
+      font-weight:700;
+      border:none;
+      cursor:pointer;
+      display:inline-block;
+    }
+    .btn.secondary{
+      background:transparent;
+      color:var(--text);
+      border:1px solid #2a3a66
+    }
+    section{padding:60px 20px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px
+    }
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid #1f2a44;
+      border-radius:16px;
+      padding:20px
+    }
+    .card h3{margin-top:0}
+    footer{
+      padding:30px 20px;
+      border-top:1px solid #1f2a44;
+      color:var(--muted)
+    }
+    .small{
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.4
+    }
+
+    /* Barra de idioma */
+    .topbar{
+      display:flex;
+      justify-content:flex-end;
+      gap:10px;
+      margin-bottom:14px;
+    }
+    .lang-btn{
+      padding:10px 14px;
+      border-radius:12px;
+      background:transparent;
+      color:var(--text);
+      border:1px solid #2a3a66;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .lang-btn.active{
+      background:var(--accent);
+      color:#06122a;
+      border-color:transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div>
+
+      <!-- Botones ES/EN -->
+      <div class="topbar" aria-label="Language switcher">
+        <button id="btnEs" class="lang-btn" onclick="setLang('es')" type="button">ES</button>
+        <button id="btnEn" class="lang-btn" onclick="setLang('en')" type="button">EN</button>
+      </div>
+
+      <!-- LOGO (archivo: logo.png en la misma carpeta) -->
+      <img src="logo.png"
+           alt="Local Google Profile Services"
+           style="width:150px;margin-bottom:22px;">
+
+      <h1
+        data-es="Local Google Profile Services"
+        data-en="Local Google Profile Services">
+      </h1>
+
+      <p class="lead"
+        data-es="Optimización profesional de <b>Google Business Profile</b> para negocios locales. Mejoramos visibilidad en Google Maps, credibilidad y confianza del cliente."
+        data-en="Professional <b>Google Business Profile</b> optimization for local businesses. We improve Google Maps visibility, credibility, and customer trust.">
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#contacto"
+           data-es="Solicitar auditoría"
+           data-en="Request an audit">
+        </a>
+
+        <a class="btn secondary" href="#servicios"
+           data-es="Ver servicios"
+           data-en="View services">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3
+        data-es="Qué hacemos"
+        data-en="What we do">
+      </h3>
+
+      <p
+        data-es="Auditamos, optimizamos y damos soporte a perfiles de Google para que tu negocio se vea más profesional, aparezca mejor posicionado y convierta más clientes."
+        data-en="We audit, optimize, and support Google profiles so your business looks more professional, ranks better, and converts more customers.">
+      </p>
+
+      <p class="small"
+        data-es="Servicio independiente de consultoría."
+        data-en="Independent consulting service.">
+      </p>
+    </div>
+  </div>
+</header>
+
+<section id="servicios">
+  <div class="wrap">
+    <h2
+      data-es="Servicios"
+      data-en="Services">
+    </h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3
+          data-es="Auditoría del perfil"
+          data-en="Profile audit">
+        </h3>
+        <p
+          data-es="Revisión completa con hallazgos claros y lista de mejoras para ranking, confianza y conversiones."
+          data-en="A full review with clear findings and a prioritized improvement list for ranking, trust, and conversions.">
+        </p>
+      </div>
+
+      <div class="card">
+        <h3
+          data-es="Optimización completa"
+          data-en="Full optimization">
+        </h3>
+        <p
+          data-es="Información, categorías, descripción, atributos, fotos, productos/servicios y estructura SEO del perfil."
+          data-en="Business info, categories, description, attributes, photos, products/services, and the profile’s SEO structure.">
+        </p>
+      </div>
+
+      <div class="card">
+        <h3
+          data-es="Reputación y reseñas"
+          data-en="Reputation & reviews">
+        </h3>
+        <p
+          data-es="Estrategia para solicitar reseñas reales, respuestas profesionales y mejora de percepción del negocio."
+          data-en="A strategy to request real reviews, respond professionally, and improve your business reputation.">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2
+      data-es="Cómo trabajamos"
+      data-en="How we work">
+    </h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3
+          data-es="1) Diagnóstico"
+          data-en="1) Diagnosis">
+        </h3>
+        <p
+          data-es="Analizamos tu perfil y tu competencia local para detectar oportunidades rápidas."
+          data-en="We analyze your profile and local competitors to identify quick opportunities.">
+        </p>
+      </div>
+
+      <div class="card">
+        <h3
+          data-es="2) Ejecución"
+          data-en="2) Execution">
+        </h3>
+        <p
+          data-es="Aplicamos cambios con criterios de calidad y consistencia para evitar errores comunes."
+          data-en="We apply changes with quality and consistency standards to avoid common mistakes.">
+        </p>
+      </div>
+
+      <div class="card">
+        <h3
+          data-es="3) Soporte"
+          data-en="3) Support">
+        </h3>
+        <p
+          data-es="Mantenemos el perfil activo con reseñas, publicaciones y ajustes según resultados."
+          data-en="We keep the profile active with reviews, posts, and adjustments based on results.">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2
+      data-es="Contacto"
+      data-en="Contact">
+    </h2>
+
+    <div class="card">
+      <p>
+        <b data-es="Email:" data-en="Email:"></b>
+        <a href="mailto:angel.localadvisor@gmail.com">angel.localadvisor@gmail.com</a>
+      </p>
+
+      <p>
+        <b data-es="WhatsApp:" data-en="WhatsApp:"></b>
+        <a href="https://wa.me/18324960240" target="_blank" rel="noopener">+1 832 496 0240</a>
+      </p>
+
+      <p>
+        <b data-es="Ubicación:" data-en="Location:"></b>
+        <span data-es="Houston, TX" data-en="Houston, TX"></span>
+      </p>
+
+      <p class="small"
+        data-es="Atención directa por WhatsApp. Respuesta rápida para auditorías y optimización."
+        data-en="Direct support via WhatsApp. Fast response for audits and optimization.">
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p
+      data-es="© 2026 Local Google Profile Services. Servicio independiente."
+      data-en="© 2026 Local Google Profile Services. Independent service.">
+    </p>
+  </div>
+</footer>
+
+<script>
+  function applyText(lang) {
+    // Cambia texto/HTML (seguro para <b> dentro del contenido)
+    document.querySelectorAll('[data-es]').forEach(el => {
+      const value = el.getAttribute('data-' + lang) || '';
+      // Si el texto incluye tags (ej: <b>), usa innerHTML. Si no, también funciona.
+      el.innerHTML = value;
+    });
+
+    // Actualiza meta description
+    const metaDesc = document.getElementById('metaDesc');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', metaDesc.getAttribute('data-' + lang) || metaDesc.getAttribute('content'));
+    }
+
+    // Actualiza atributo lang del documento
+    document.documentElement.lang = lang;
+
+    // Botón activo
+    const btnEs = document.getElementById('btnEs');
+    const btnEn = document.getElementById('btnEn');
+    if (btnEs && btnEn) {
+      btnEs.classList.toggle('active', lang === 'es');
+      btnEn.classList.toggle('active', lang === 'en');
+    }
+  }
+
+  function setLang(lang) {
+    localStorage.setItem('lang', lang);
+    applyText(lang);
+  }
+
+  // Idioma por defecto: ES, o el último guardado
+  const savedLang = localStorage.getItem('lang') || 'es';
+  applyText(savedLang);
+</script>
+
+</body>
+</html>
